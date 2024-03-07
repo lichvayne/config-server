@@ -1,0 +1,20 @@
+server:
+  port: 8889
+
+spring:
+  application:
+    name: config-service
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/lichvayne/configs
+          username: lichvayne
+          password: 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
+          clone-on-start: true
+          search-paths:
+          - "{application}"
+          - "{application}/{profile}"
+
+        default-label: master
