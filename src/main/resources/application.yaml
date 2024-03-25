@@ -1,10 +1,13 @@
 server:
   port: 8889
 
+logging:
+  level:
+    org.springframework.cloud.config: DEBUG
+
 spring:
   application:
     name: config-service
-
   cloud:
     config:
       server:
